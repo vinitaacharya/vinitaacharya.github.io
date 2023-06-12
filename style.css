@@ -1,0 +1,14 @@
+
+.header{
+    background: rgb(91, 235, 187);
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+
+}
+
+.item{
+    background: tomato;
+}

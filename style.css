@@ -1,14 +1,36 @@
 
-.header{
-    background: rgb(91, 235, 187);
+html{
+    background-color: rgb(243, 242, 234);
+}
+header{
+    padding: 1vh;
+    background-color: rgb(17, 59, 31);
+    
+    margin:-2vh -2vh 2vh -2vh;
 }
 
 .container{
     display:flex;
-    flex-direction: column;
-
+    flex-direction:row;
+    justify-content: space-around;
+    list-style: none;
+    flex-flow:row wrap;     
+}
+.container a{
+    margin:10px;
+    font-size:3.5vh;
+    /*border:5vh; /*figure out how to make this work:color won't show
+    border-radius:10%;
+    border-color: #ebebe3;*/
+    color:white
 }
 
-.item{
-    background: tomato;
+footer{
+    background-color: #ebebe3;
+    margin: 2vh 2vh 2vh 2vh;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: 40vh 40vh 40vh 40vh 40vh;
 }

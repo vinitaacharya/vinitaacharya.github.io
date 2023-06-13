@@ -47,11 +47,39 @@ img{
 }
 
 footer{
-    background-color: rgb(154, 140, 152);
     margin: 2vh 2vh 2vh 2vh;
 }
 
+
+
+#try :hover{
+    font-size:150%;
+    color:rgb(201, 173,167);
+
+}
+
+h5{
+    color:white;
+
+}
+
 .grid{
-    display:grid;
-    grid-template-columns: 40vh 40vh 40vh 40vh 40vh;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    list-style: none;
+    flex-flow:row wrap;   
+}
+
+.contact{
+    list-style-type: style none;
+}
+p{
+    text-align:center;
+    color:rgb(242, 233, 228)
+}
+
+#down{
+    color:rgb(242, 233, 228);
+    
 }

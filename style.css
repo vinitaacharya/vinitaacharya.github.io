@@ -1,49 +1,74 @@
-
 html{
-    background-color: rgb(74, 78, 105);
-}
-
+    background-color: rgb(250, 250, 250);
+    box-sizing: border-box}
 h1{
     text-align: center;
-    color:white;
+    color:rgb(19, 97, 58);
+    background-color:rgb(140, 165, 148)
 }
 header{
     padding: 1vh;
-    background-color: rgb(34, 34, 59);
+    background-color: rgb(34, 88, 84);
     
     
 }
-
 .container{
     display:flex;
     flex-direction:row;
     justify-content: space-around;
     list-style: none;
-    flex-flow:row wrap;      
+    flex-flow:row wrap; 
+    
+        
 }
 .container a{
     margin:10px;
+    border-radius:1vh;
+    border-width:thin;
+    text-decoration:none;
     font-size:3vh;
+    border-style:solid;
+    padding:2vh;
+    border-color:rgb(29, 75, 72);
     color:white
+    
+    
 }
+
+.aboutMeContent{
+    display:flex;
+    text-align:left;
+    flex-wrap:none;
+    justify-content:space-around;
+}
+
 
 img{
     filter:brightness(30%);
     width:100%;
-    height:50%;
+    height:auto;
+    
+    
+        
+}
+p{
+    color:black;
+}
+#pic{
+    position:relative;
     
 }
 
+
 .center {
+    position:absolute; 
+    top:20%;
+    width:100%;
     text-align:center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 18vh;
-    color:white
+    font-size: 500%;
     
     
+     
 }
 
 footer{
@@ -52,14 +77,15 @@ footer{
 
 
 
-#try :hover{
-    font-size:150%;
-    color:rgb(201, 173,167);
-
-}
+.try :hover{
+        
+        color: rgb(34, 88, 84);
+        background:rgb(231, 236, 233);
+        
+    }
 
 h5{
-    color:white;
+    color:rgb(0, 3, 3);
 
 }
 
@@ -74,12 +100,21 @@ h5{
 .contact{
     list-style-type: style none;
 }
-p{
+#pic{
     text-align:center;
-    color:rgb(242, 233, 228)
+    color:rgb(241, 232, 232)
 }
 
 #down{
-    color:rgb(242, 233, 228);
-    
+    color:rgb(24, 21, 20);
+
+}
+
+/*media querys*/
+
+@media screen and (max-width:700px){
+    .center{
+        top:-5%;
+    }
+
 }

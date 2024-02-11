@@ -2,70 +2,154 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <title>Vinita Acharya</title>
+    <title>Vinita Acharya's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter:wght@200&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0GXM0QGTN7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-0GXM0QGTN7');
+    </script>
 </head>
 <body>
     <header>
-        
+        <!-- Main heading of the website -->
+        <h1 style="font-family: 'EB Garamond', serif;">Vinita Acharya's Portfolio</h1>
         <nav>
-            <ul class="container" >
-                <li class="try"><a href="#about">About Me</a></li>
-                <li class="try"><a href="#proj">Projects</a></li>
-                <li class="try"><a href="#res">Resume</a></li>
-                <li class="try"><a href="#con">Contact</a></li>
-
+            <!-- Navigation bar with links to different sections of the site -->
+            <ul id="nav-links" >
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-
     </header>
-    <div id="pic"/>
-        <img src="pexels-francesco-ungaro-96381.jpg" alt="header picture">
-        <h2 class="center">Vinita Acharya</h2>
-    <div>  
-     
 
-    <main>
-        <div class="aboutMe" id="about">
-            <h1>About Me:</h1>
-            <div class="aboutMeContent">
-            <p class="content">Hello, my name is Vinita Acharya! I am a Computer Science student attending the New Jersey Institute of Technology. 
-                This website is a personal project I've been excited to begin. 
-                I plan to further improve the design of this website in the near future!</p>
-            <!-- <p class="content">Continued informatio more to test what happensbut it seems that there is not much space between them -->
-                <!-- however, that is chnaging as I write more words i think -->
-            <!-- </p> -->
-        
+    <!-- About section with personal information and profile image -->
+    <section id="about" style="margin-top: -50px;">
+        <h2 style="text-align: center;">Hi 👋, Welcome to my Portfolio</h2>
+        <img src="ProfileImage.jpg" alt="Profile Picture" id="about-img">
+        <p>Hello, my name is Vinita Acharya and I'm a undergrad sophomore studing Computer Science at the New Jersey Inst
+             enthusiast at the New Jersey Institute of Technology. I'm not just a student; I'm a tech-savvy dreamer with a 
+            relentless drive. I aim to be the catalyst behind innovative projects, striving in collaboration with 
+            visionary teams to propel technology forward. I 
+            have a interest in software engineering and finance. </p>
+    </section>
+
+    <!-- Education section with academic details -->
+    <section id="education">
+        <h2 style="font-family: 'EB Garamond', serif;">Education <i class="fa fa-graduation-cap" aria-hidden="true"></i></h2>
+        <!-- Education details are added here -->
+        <div class="education-container">
+            <div class="school">
+                <h3>New Jersey Institute of Technology</h3>
+                <p>Bachelors of Science, Computer Science</p>
+                <p>2022 - 2026</p>
             </div>
+        </div>
+        <!-- Additional education entries can be added here -->
+    </section>
 
-        <!-- <div class="projects" id="proj"> -->
-            <!-- <h1>Projects:</h1> -->
-        <!-- </div> -->
+    <!-- Projects section showcasing your work -->
+    <section id="projects">
+        <h2 style="font-family: 'EB Garamond', serif;">Projects</h2>
+        <div class="projects-container">
+            <!-- Individual project details -->
+            <div class="project">
+                <img src="BakeryWebsite.png" alt="Project 1">
+                <h3>Bread Bakery Website</h3>
+                <p>Dynamic Bakery Website </p>
+                <button class="expand-btn">More Info</button>
+                <!-- Detailed information about the project -->
+                <div class="more-info">
+                    <p> • Developed dynamic bakery webpage utilizing MySQL databases, PHP, HTML ,CSS, and JavaScript <br>
+                        • Bakery owner may log into the website and manage their bakery menu by adding and removing items <br>
+                        • Bakery owner may create shipping labels to deliver bakery items through website <br>
+                        • Customers get access to the main website showing menu items </p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="TicTacToe.png" alt="Project 1">
+                <h3>TicTacToe Game</h3>
+                <p>Fun two player Tic-Tac-Toe Game</p>
+                <button class="expand-btn">More Info</button>
+                <!-- Detailed information about the project -->
+                <div class="more-info">
+                    <p>• Developed using knowledge of  flex box and grid elements  JavaScript, CSS, and HTML  <br>
+                       • Utilized understanding of the DOM to overcome any challenges and bugs in code </p>
+                </div>
+            </div>
+            <!-- <div class="project">
+                <img src="Placeholder.jpeg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Short description of project 1.</p>
+                <button class="expand-btn">More Info</button>
+                ---commentoutDetailed information about the project
+                <div class="more-info">
+                    <p>[Extended description of project 1]</p>
+                </div>
+            </div> -->
+            
+            <!-- Additional projects can be added in similar blocks -->
+        </div>
+    </section>
 
-        <div class="resume" id="res">
-            <h1>Resume:</h1>
-            <a id="down" href="Vinita Acharya Resume Google1.pdf" download="resume"> Download My Resume</a>
-        </div>  
-    </main>    
+    <!-- Skills section listing your technical skills -->
+    <section id="skills">
+        <h2 style="font-family: 'EB Garamond', serif;">My Skills</h2>
+        <!-- Lists of skills -->
+        <ul class="skills-list">
+            <li>PHP</li> 
+            <li>MySQL databases</li>           
+            <li>Java</li>
+            <li>C++</li>
+            <li>JavaScript</li>
+        </ul>
+        <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>JavaScript</li>
+            
+        </ul>
+    </section>
+
+    <!-- Contact section with a form for visitors to reach out to you -->
+    <section id="contact">
+        <h2 style="font-family: 'EB Garamond', serif;">Contact</h2>
+        <!---
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name">
+            <input type="email" id="email" name="email" placeholder="Your Email">
+            <textarea id="message" name="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section> -->
+
+    <!-- Contact information section -->
+    <section id="contact-info">
+        <p>Phone: (609) - 513 - 9697</p>
+        <p>Email: vinitaacharya2004@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/vinita-acharya/">https://www.linkedin.com/in/vinita-acharya/</a></p>
+    </section>
+
+    <!-- Footer with copyright information -->
     <footer>
-        <div class="contact" id="con">
-        <h1>Contact:</h1>
-        
-        <!-- <div class="grid"> -->
-            <h5 class="item">Email: vinitaacharya2004@gmail.com</h5>
-            <h5 class="item">Phone: 609-513-9697</h5>
-            <!-- <h5 class="item">LinkedIn:</h5> -->
-            <!-- <h5 class="item">GitHub:</h5>   -->
-            <!-- <h5 class="item">DevPost:</h5>   -->
-
-           
-        </div>  
-        </div> 
+        <p style="color: black;">&copy; 2024 Vinita Acharya's Portfolio</p>
     </footer>
 
+    <!-- Link to an external JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
-
-

@@ -1,8 +1,8 @@
 // Attaches an event listener to the form with the ID 'contact-form'
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevents the default form submission behavior
-    alert('Form submitted!'); // Displays an alert when the form is submitted
-});
+// document.getElementById('contact-form').addEventListener('submit', function(event) {
+//     event.preventDefault(); // Prevents the default form submission behavior
+//     alert('Form submitted!'); // Displays an alert when the form is submitted
+// });
 
 // This event listener waits for the entire content of the webpage to load
 document.addEventListener('DOMContentLoaded', function() {
